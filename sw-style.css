@@ -1,0 +1,112 @@
+
+* {
+    font-family: Montserrat, sans-serif;
+    background-color: #ffffff;
+    box-sizing: border-box; 
+}
+
+/* Navigation bar */
+.nav-panel {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 12px 8px #f6f2fd;
+    z-index: 10;
+}
+
+/* Logo styling */
+.pa-logo {
+    width: 25%;
+}
+
+.nav-img {
+    width: 240px;
+}
+
+/* Navigation options */
+.pa-options {
+    display: flex;
+    height: 100px;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 80px;
+}
+
+.pa-options > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* User profile section */
+.pa-profile {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+.pro-user {
+    font-size: x-large;
+}
+
+/* Main content spacing */
+main {
+    margin-top: 140px;
+}
+
+/* Image slider styles */
+img {
+    height: 100%;
+    width: 100%;
+}
+
+#frame {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+#slides {
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slides .frame {
+    width: 33.33%; /* For 3 images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keyframes for automatic sliding */
+@keyframes slide-animation {
+    0% {
+        margin-left: 0;
+    }
+    33% {
+        margin-left: -100%;
+    }
+    66% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+/* Inner class for sliding images */
+#slides .inner {
+    display: flex;
+    width: 300%; 
+    animation: slide-animation 30s infinite; 
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
