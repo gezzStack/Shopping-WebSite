@@ -65,7 +65,20 @@ img {
     height: 100%;
     width: 100%;
 }
+.frame {
+    position: relative;
+    text-align: center;
 
+}
+.img-cap {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background: transparent;
+    color: #ffffff;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
 #frame {
     margin: 0 auto;
     height: 70%;
@@ -152,6 +165,8 @@ main > div >div > div > a {
     text-decoration: none;
     color: black;
     font-size: large;
+    font-weight: bold;
+    text-decoration: solid;
 }
 
 .box:nth-child(1) .box-img {
@@ -177,6 +192,10 @@ main > div >div > div > a {
 
 .box:nth-child(3):hover .box-img {
     background-image: url(coll_card.webp); /* Seasonal Collections hover image */
+}
+h2 {
+    display: flex;
+    justify-content: center;
 }
 
 /* footer */
@@ -290,8 +309,24 @@ main > div >div > div > a {
     border: none;
     cursor: pointer;
     margin-bottom: 30px;
-    width: 100%;
+    width: 75%;
     text-align: center;
+}
+.rem-to-cart {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 25%;
+    text-align: center;
+    margin-left: 2px;
+}
+.but {
+    display: flex;
 }
 
 /* Additional Product Details */

@@ -11,7 +11,7 @@
     <header>
         <div class="nav-panel">
 
-            <div class="pa-logo">
+            <div class="pa-logo" onclick="window.location.href='sw-index.html'">
                 <img class="nav-img" src="logo.png">
             </div>
 
@@ -59,7 +59,10 @@
                     </select>
                 </div>
         
-                <button class="add-to-cart">ADD TO CART</button>
+                <div class="but">
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button onclick="removeItemFromCart(0)" class="rem-to-cart">REMOVE</button>
+                </div>
         
                 <div class="additional-details">
                     <p>PRODUCT DETAILS</p>
@@ -99,7 +102,10 @@
                     </select>
                 </div>
         
-                <button class="add-to-cart">ADD TO CART</button>
+                <div class="but">
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button onclick="removeItemFromCart(1)" class="rem-to-cart">REMOVE</button>
+                </div>
         
                 <div class="additional-details">
                     <p>PRODUCT DETAILS</p>
@@ -139,7 +145,10 @@
                     </select>
                 </div>
         
-                <button class="add-to-cart">ADD TO CART</button>
+                <div class="but">
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button onclick="removeItemFromCart(2)" class="rem-to-cart">REMOVE</button>
+                </div>
         
                 <div class="additional-details">
                     <p>PRODUCT DETAILS</p>
@@ -159,7 +168,7 @@
         </div>
         
 
-    </main>
+    </main><hr>
 
     <footer>
         <h5>Reach Us On :</h5>
@@ -170,7 +179,7 @@
                 <img class="yt" src="yt.png">
                 <img class="ig" src="ig.png">
             </div>
-            <div id="imggg">
+            <div id="imggg" onclick="window.location.href='sw-index.html'">
                 <img src="logo.png" class="my-logo">
             </div>
         </div><hr>
@@ -186,5 +195,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="sw-app.js"></script>
 </body>
 </html>
