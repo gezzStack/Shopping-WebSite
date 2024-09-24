@@ -1,9 +1,10 @@
 
 * {
     font-family: Montserrat, sans-serif;
-    background-color: #ffffff;
     box-sizing: border-box; 
+    background-color: #f9f9f9;
 }
+
 
 /* Navigation bar */
 .nav-panel {
@@ -67,8 +68,8 @@ img {
 
 #frame {
     margin: 0 auto;
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 75%;
 }
 
 #slides {
@@ -119,7 +120,7 @@ img {
 }
 /* Shop-Section: All boxes */
 .box {
-    height: 100%;
+    height: 500px;
     width: 25%;
     background-color: white;
     padding: 20px 0px 15px;
@@ -128,7 +129,7 @@ img {
     transition: box-shadow 0.3s ease; 
 }
 .box-img {
-    height: 450px;
+    height: 400px;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -219,4 +220,102 @@ main > div >div > div > a {
     position: absolute;
     right: 0;
     height: 100px;
+}
+
+/* Main */
+/* Product Page Layout */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Image Section */
+.product-image img {
+    width: 500px;
+    height: auto;
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+/* Product Information Section */
+.product-info {
+    width: 500px;
+}
+
+/* Product Title and SKU */
+.product-info h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.sku {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Product Price */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Size Selector */
+.product-size {
+    margin-bottom: 20px;
+}
+
+.product-size label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.product-size select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Additional Product Details */
+.additional-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Social Sharing Section */
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.social-icons span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.social-icons i {
+    margin-right: 15px;
+    font-size: 18px;
+    cursor: pointer;
 }
