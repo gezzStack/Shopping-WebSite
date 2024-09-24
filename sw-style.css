@@ -79,6 +79,9 @@ img {
     margin-left: 60px;
     margin-bottom: 30px;
 }
+#img-ind {
+    margin-left: 20%;
+}
 #frame {
     margin: 0 auto;
     height: 70%;
@@ -197,6 +200,7 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
 
 /* footer */
 .s-media {
